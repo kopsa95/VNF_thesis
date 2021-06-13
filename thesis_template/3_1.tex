@@ -1,0 +1,23 @@
+There is a rising demand for services consisting of multiple
+interconnected components, e.g., microservices in a service
+mesh or chained virtual network functions (VNFs) in network function virtualization (NFV) \cite{12}. These services can
+scale flexibly by instantiating service components according
+to current demand. Such instances can run independently on
+any compute node in the network and process incoming flows
+requesting the service.
+The goal of service coordination is to ensure that these
+flows are processed successfully by traversing instances of
+all required service components. Additionally, flows should
+complete with short end-to-end delay to ensure good Quality
+of Service (QoS). To this end, the requested services need to be
+scaled and their instances placed in the network, i.e., we have
+to decide how many service components to instantiate where.
+Furthermore, incoming flows need to be routed from their
+ingress nodes through these deployed instances and finally to
+their egress nodes. In doing so, node and link capacities need
+to be respected and link delays should be considered.
+
+To address the issue three algorithms proposed were evaluated, a simulation environment was deployed proposed at \cite{12}
+Algorithm used: Random Schedule,Load Balance algorithm and Shortest Path algorithm (more details of these algorithms will be discussed in the next section)
+
+Real graph network topologies were used as input with "fake" traffic produced from the author, in order to simulate the mentioned algorithms.
